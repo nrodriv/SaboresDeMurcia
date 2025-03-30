@@ -1,13 +1,59 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Vanilla App</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabores de Murcia</title>
+    <link rel="stylesheet" href="./styles.scss" />
   </head>
   <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="img/logo-header.png" alt="Logo" class="logo">
+        <ul class="main-nav">
+          <li><a href="#">RECETAS</a></li>
+          <li><a href="#">QUIÉNES SOMOS</a></li>
+          <li><a href="#">PRODUCTOS DE LA TIERRA</a></li>
+          <li><a href="#">ENLACES DE INTERÉS</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="lema">
+        <h1>Todo el sabor de Murcia sin salir de tu cocina</h1>
+      </section>
+
+      <section class="intro">
+        <h2>¿Qué es Sabores De Murcia?</h2>
+        <p>Somos una plataforma dedicada a promocionar de forma altruista la cultura y la gastronomía de nuestra tierra</p>
+      </section>
+
+      <section class="recetas">
+        <h2>Recetas del mes</h2>
+        <div class="cards">
+          <div class="card" style="background-image: url('./img/receta1.png');">
+            <span>Sopa marinera</span>
+          </div>
+          <div class="card" style="background-image: url('./img/receta2.png');">
+            <span>Mojete murciano</span>
+          </div>
+          <div class="card" style="background-image: url('./img/receta3.png');">
+            <span>Dulce de granada</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <img src="img/logo-footer.png" alt="Logo" class="logo" />
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Política de cookies</a>
+          <a href="#">Aviso legal</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
