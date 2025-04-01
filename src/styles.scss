@@ -424,8 +424,88 @@ body {
   }
 }
 
+.lema-mojete-murciano {
+  background-image: url("./img/receta2-background.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px $rojo-murcia; 
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
+
 //Cursivas en rojo
 .italics {
   font-weight: bold;
   color: $rojo-murcia; 
+}
+
+
+
+// Estilos específicos para enlaces.html
+.lema-enlaces {
+  background-image: url('./img/enlaces-background.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.enlaces-info {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .intro-enlaces {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .fuentes {
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: $rojo-murcia; // Rojo Murcia
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      a {
+        color: $rojo-murcia;
+        text-decoration: underline;
+        word-break: break-word;
+      }
+    }
+  }
 }
