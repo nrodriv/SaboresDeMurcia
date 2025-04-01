@@ -6,13 +6,14 @@
     <title>Sabores de Murcia</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="./styles.scss" />
+    <script defer src="./mostrar.js"></script>
   </head>
   <body>
     <!-- header -->
     <header class="site-header">
       <div class="header-inner">
         <a href="index.html">
-          <img src="img/logo-header.png" alt="Logo" class="logo">
+          <img src="img/logo-header.png" alt="Inicio | Sabores de Murcia" class="logo">
         </a>
         <ul class="main-nav">
           <li><a href="recetas.html">RECETAS</a></li>
@@ -28,11 +29,13 @@
       <section class="lema">
         <h1>Todo el sabor de Murcia sin salir de tu cocina</h1>
       </section>
+
       <!-- Info quienes somos -->
       <section class="intro">
         <h2>¿Qué es Sabores De Murcia?</h2>
         <p>Somos una plataforma dedicada a promocionar de forma altruista la cultura y la gastronomía de nuestra tierra</p>
       </section>
+
       <!-- Cards de recetas -->
       <section class="recetas">
         <h2>Recetas del mes</h2>
@@ -46,14 +49,32 @@
           <div class="card" style="background-image: url('./img/receta3.png');">
             <span>Dulce de granada</span>
           </div>
+
+          <!-- Recetas ocultas por defecto -->
+          <div class="card extra-receta" style="background-image: url('./img/receta4.png');">
+            <span>Moxil</span>
+          </div>
+          <div class="card extra-receta" style="background-image: url('./img/receta5.png');">
+            <span>Talvinas</span>
+          </div>
+          <div class="card extra-receta" style="background-image: url('./img/receta6.png');">
+            <span>Moragas</span>
+          </div>
+        </div>
+
+        <!-- Botones mostar más / ver menos -->
+        <div class="ver-mas">
+          <button id="ver-mas">Mostrar más</button>
+          <button id="ver-menos" class="hidden">Mostrar menos</button>
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-inner">
         <a href="index.html">
-          <img src="img/logo-footer.png" alt="Logo" class="logo">
+          <img src="img/logo-footer.png" alt="Inicio | Sabores de Murcia | Logo final" class="logo">
         </a>
         <div class="footer-links">
           <a href="#">Política de privacidad</a>

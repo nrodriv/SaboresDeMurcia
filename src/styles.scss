@@ -92,11 +92,18 @@ body {
 
   h1 {
     font-size: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-shadow: none; 
   }
 
   &.lema-recetas {
     background: url('img/backgroundRecetas.png') center center / cover no-repeat;
   }
+   
  
 }
 
@@ -126,7 +133,6 @@ body {
   }
 
 // Tarjetas index
-
 .cards {
     display: flex;
     flex-direction: column;
@@ -148,7 +154,11 @@ body {
       text-decoration: none; 
     
       span {
-        text-decoration: none; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
       }
     
       &:visited,
@@ -357,7 +367,7 @@ body {
   font-family: 'Alegreya', serif;
   min-height: 100%; 
 
-  h3 {
+  h2 {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
     font-weight: bold;
@@ -493,7 +503,7 @@ body {
     h2 {
       font-size: 1.2rem;
       margin-top: 1.5rem;
-      color: $rojo-murcia; // Rojo Murcia
+      color: $rojo-murcia; 
     }
 
     p {
@@ -508,4 +518,39 @@ body {
       }
     }
   }
+}
+
+
+// Estilos para el botón y sus funcionalidades
+.ver-mas {
+  margin-top: 1.5rem;
+  text-align: center;
+
+  button {
+    background-color: $rojo-murcia; 
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+
+.cards .extra-receta {
+  display: none !important;
+}
+
+.cards .extra-receta.visible {
+  display: flex !important;
+}
+
+.hidden {
+  display: none !important;
 }
