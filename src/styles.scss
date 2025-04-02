@@ -361,6 +361,13 @@ body {
   }
 }
 
+.step-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: $texto-principal;
+}
+
 .card-step {
   background-color: $blanco;
   border: 1px solid #ccc;
@@ -546,6 +553,7 @@ body {
   vertical-align: middle;
 }
 
+// Salto a la sección principal y mejorar la accesibilidad
 .skip-link {
   position: absolute;
   left: -999px;
@@ -569,10 +577,3 @@ body {
   }
 }
 
-
-.step-title {
-  text-align: center;
-  font-size: 2rem;
-  margin: 2rem auto;
-  color: $texto-principal;
-}
