@@ -2,11 +2,14 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Sabores de Murcia: un espacio para enamorarte de la gastronomía de la región">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabores de Murcia</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <!-- Estilos -->
     <link rel="stylesheet" href="./styles.scss" />
-    <script defer src="./mostrar.js"></script>
+    <script type="module" src="./app.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -40,24 +43,24 @@
       <section class="recetas">
         <h2>Recetas del mes</h2>
         <div class="cards cards-index">
-          <a href="sopa-marinera.html" class="card" style="background-image: url('./img/receta1.png');">
+          <a href="sopa-marinera.html" class="card card-tilt" style="background-image: url('./img/receta1.png');">
             <span>Sopa marinera</span>
           </a>
-          <a href="mojete-murciano.html" class="card" style="background-image: url('./img/receta2.png');">
+          <a href="mojete-murciano.html" class="card card-tilt" style="background-image: url('./img/receta2.png');">
             <span>Mojete murciano</span>
           </a>
-          <div class="card" style="background-image: url('./img/receta3.png');">
+          <div class="card card-tilt" style="background-image: url('./img/receta3.png');">
             <span>Dulce de granada</span>
           </div>
 
           <!-- Recetas ocultas por defecto -->
-          <div class="card extra-receta" style="background-image: url('./img/receta4.png');">
+          <div class="card extra-receta card-tilt" style="background-image: url('./img/receta4.png');">
             <span>Moxil</span>
           </div>
-          <div class="card extra-receta" style="background-image: url('./img/receta5.png');">
+          <div class="card extra-receta card-tilt" style="background-image: url('./img/receta5.png');">
             <span>Talvinas</span>
           </div>
-          <div class="card extra-receta" style="background-image: url('./img/receta6.png');">
+          <div class="card extra-receta card-tilt" style="background-image: url('./img/receta6.png');">
             <span>Moragas</span>
           </div>
         </div>
