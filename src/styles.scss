@@ -411,6 +411,8 @@ body {
       top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
+      width: 100%;
+      height: 200px;
     }
   }
 }
@@ -565,4 +567,12 @@ body {
     font-weight: bold;
     box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
   }
+}
+
+
+.step-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: $texto-principal;
 }
