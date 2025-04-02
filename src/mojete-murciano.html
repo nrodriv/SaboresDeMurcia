@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles.scss" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <!-- header -->
     <header class="site-header">
       <div class="header-inner">
@@ -26,7 +27,7 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-mojete-murciano">
         <h1>Mojete murciano</h1>
@@ -109,17 +110,6 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <a href="index.html">
-          <img src="img/logo-footer.png" alt="Mojete murciano | Sabores de Murcia | Logo final" class="logo">
-        </a>
-        <div class="footer-links">
-          <a href="#">Política de privacidad</a>
-          <a href="#">Política de cookies</a>
-          <a href="#">Aviso legal</a>
-        </div>
-      </div>
-    </footer>
+    <include src="includes/footer.html"></include>
   </body>
 </html>

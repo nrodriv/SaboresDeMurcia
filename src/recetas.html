@@ -12,6 +12,7 @@
     <script type="module" src="./cards.js"></script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <!-- header -->
     <header class="site-header">
       <div class="header-inner">
@@ -27,7 +28,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-recetas">
         <h1>Recetas</h1>
@@ -59,17 +60,6 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <a href="index.html">
-          <img src="img/logo-footer.png" alt="Recetas | Sabores de Murcia | Logo final" class="logo">
-        </a>
-        <div class="footer-links">
-          <a href="#">Política de privacidad</a>
-          <a href="#">Política de cookies</a>
-          <a href="#">Aviso legal</a>
-        </div>
-      </div>
-    </footer>
+    <include src="includes/footer.html"></include>
   </body>
 </html>

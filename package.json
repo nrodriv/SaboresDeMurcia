@@ -8,8 +8,11 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-posthtml": "^2.14.4",
     "@parcel/transformer-sass": "^2.14.4",
-    "parcel": "^2.14.0"
+    "parcel": "^2.14.0",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^2.0.1"
   },
   "dependencies": {
     "lucide": "^0.487.0",

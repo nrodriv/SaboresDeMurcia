@@ -13,22 +13,11 @@
     <script defer src="./mostrar.js"></script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <!-- header -->
-    <header class="site-header">
-      <div class="header-inner">
-        <a href="index.html">
-          <img src="img/logo-header.png" alt="Inicio | Sabores de Murcia" class="logo">
-        </a>
-        <ul class="main-nav">
-          <li><a href="recetas.html">RECETAS</a></li>
-          <li><a href="#">QUIÉNES SOMOS</a></li>
-          <li><a href="#">PRODUCTOS DE LA TIERRA</a></li>
-          <li><a href="enlaces.html">ENLACES DE INTERÉS</a></li>
-        </ul>
-      </div>
-    </header>
+    <include src="includes/header.html"></include>
 
-    <main>
+    <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema">
         <h1>Todo el sabor de Murcia sin salir de tu cocina</h1>
@@ -75,17 +64,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <a href="index.html">
-          <img src="img/logo-footer.png" alt="Inicio | Sabores de Murcia | Logo final" class="logo">
-        </a>
-        <div class="footer-links">
-          <a href="#">Política de privacidad</a>
-          <a href="#">Política de cookies</a>
-          <a href="#">Aviso legal</a>
-        </div>
-      </div>
-    </footer>
+    <include src="includes/footer.html"></include>
+
   </body>
 </html>
