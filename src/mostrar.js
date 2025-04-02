@@ -1,3 +1,4 @@
+// Código del botón
 document.addEventListener('DOMContentLoaded', () => {
   const verMas = document.getElementById('ver-mas');
   const verMenos = document.getElementById('ver-menos');
@@ -15,3 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
     verMenos.classList.add('hidden');
   });
 });
+
+
