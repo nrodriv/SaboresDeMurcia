@@ -575,3 +575,106 @@ body {
   }
 }
 
+// Animación para al logo del header
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .blinking-svg text {
+    animation: blink 5s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
+// Aplicación clip-path y animación para el logo del footer
+.logo-footer {
+  width: 80px;
+  height: auto;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
+}
+
+@keyframes starBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.logo-footer {
+  animation: starBlink 2s infinite;
+}
+
+
+// Subrayado destacado de los enlaces al hacer hover
+.fuentes a {
+  position: relative;
+  color: $rojo-murcia;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.fuentes a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $rojo-murcia;
+  transition: width 0.3s ease;
+}
+
+.fuentes a:hover::after {
+  width: 100%; 
+}
+
+
+// Fade in en la entrada de los títulos de los pasos de recetas
+.card-step h2 {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Hover en las imagenes de los pasos de recetas
+.card-step img {
+  transition: transform 0.3s ease;
+}
+
+.card-step img:hover {
+  transform: scale(1.05);
+}
+
+// Ligero parpadeo de los iconos de los pasos de las recetas
+.icon-h2 {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3); 
+  }
+}
