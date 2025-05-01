@@ -31,7 +31,11 @@
     <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-recetas">
-        <img src="./img/backgroundRecetas.png" alt="Fondo recetas">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/backgroundRecetas-desktop.png?as=webp">
+          <source media="(min-width: 768px)" srcset="./img/backgroundRecetas-tablet.png?as=webp">
+          <img src="./img/backgroundRecetas-mobile.png?as=webp" alt="Fondo recetas">
+        </picture>
         <h1>Recetas</h1>
       </section>
 
@@ -39,27 +43,56 @@
       <section class="recetas receta-listado">
         <div class="cards">
           <a href="sopa-marinera.html" class="card card-tilt">
-            <img src="./img/receta1.png" alt="Sopa marinera">
+            <img 
+              src="./img/receta1.png?as=webp&width=800"
+              srcset="./img/receta1.png?as=webp&width=400 400w, ./img/receta1.png?as=webp&width=800 800w, ./img/receta1.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Sopa marinera">
             <span>Sopa marinera</span>
           </a>
+      
           <a href="mojete-murciano.html" class="card card-tilt">
-            <img src="./img/receta2.png" alt="Mojete murciano">
+            <img 
+              src="./img/receta2.png?as=webp&width=800"
+              srcset="./img/receta2.png?as=webp&width=400 400w, ./img/receta2.png?as=webp&width=800 800w, ./img/receta2.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Mojete murciano">
             <span>Mojete murciano</span>
           </a>
+      
           <div class="card card-tilt">
-            <img src="./img/receta3.png" alt="Dulce de granada">
+            <img 
+              src="./img/receta3.png?as=webp&width=800"
+              srcset="./img/receta3.png?as=webp&width=400 400w, ./img/receta3.png?as=webp&width=800 800w, ./img/receta3.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Dulce de granada">
             <span>Dulce de granada</span>
           </div>
+      
           <div class="card card-tilt">
-            <img src="./img/receta4.png" alt="Moxil">
+            <img 
+              src="./img/receta4.png?as=webp&width=800"
+              srcset="./img/receta4.png?as=webp&width=400 400w, ./img/receta4.png?as=webp&width=800 800w, ./img/receta4.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Moxil">
             <span>Moxil</span>
           </div>
+      
           <div class="card card-tilt">
-            <img src="./img/receta5.png" alt="Talvinas">
+            <img 
+              src="./img/receta5.png?as=webp&width=800"
+              srcset="./img/receta5.png?as=webp&width=400 400w, ./img/receta5.png?as=webp&width=800 800w, ./img/receta5.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Talvinas">
             <span>Talvinas</span>
           </div>
+      
           <div class="card card-tilt">
-            <img src="./img/receta6.png" alt="Moragas">
+            <img 
+              src="./img/receta6.png?as=webp&width=800"
+              srcset="./img/receta6.png?as=webp&width=400 400w, ./img/receta6.png?as=webp&width=800 800w, ./img/receta6.png?as=webp&width=1080 1080w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Moragas">
             <span>Moragas</span>
           </div>
         </div>

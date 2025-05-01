@@ -30,7 +30,11 @@
     <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-sopa-marinera">
-        <img src="./img/receta1-background.png" alt="Fondo Sopa Marinera">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/receta1-background-desktop.png?as=webp">
+          <source media="(min-width: 768px)" srcset="./img/receta1-background-tablet.png?as=webp">
+          <img src="./img/receta1-background-mobile.png?as=webp" alt="Fondo Sopa Marinera">
+        </picture>
         <h1>Sopa marinera</h1>
       </section>
       <!-- Inicio cards de recetas individuales -->
@@ -84,19 +88,31 @@
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 1</h2>
             <p>Previamente, se limpia y destripa la pescadilla. Las almejas, por su parte, se lavan bien bajo un chorro abundante de agua fría. Los calamares se limpian primero y luego se trocean.</p>
-            <img src="./img/receta1-1.png" alt="Paso 1 - Sopa marinera">
+            <img 
+              src="./img/receta1-1.png?as=webp&width=540"
+              srcset="./img/receta1-1.png?as=webp&width=300 300w, ./img/receta1-1.png?as=webp&width=400 400w, ./img/receta1-1.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 1 - Sopa marinera">
           </article>
-
+          
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 2</h2>
             <p>En una olla se pone agua con sal y, cuando esté caliente, se cuecen la cabeza de la merluza, la pescadilla entera ya limpia, las gambas, los calamares y las almejas. Finalizada la cocción, se retira la olla del fuego y se cuela el caldo. Luego, la cebolla y el tomate, pelados y cortados en cascos grandes, se incorporan al caldo limpio y se dejan cocer un instante más.</p>
-            <img src="./img/receta1-2.png" alt="Paso 2 - Sopa marinera">
+            <img 
+              src="./img/receta1-2.png?as=webp&width=540"
+              srcset="./img/receta1-2.png?as=webp&width=300 300w, ./img/receta1-2.png?as=webp&width=400 400w, ./img/receta1-2.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 2 - Sopa marinera">
           </article>
-
+          
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 3</h2>
             <p>La cabeza de la merluza se machaca en el mortero, se cuela y se añade a la olla. Luego se incorporan las almejas sin concha, las gambas peladas, la pescadilla desmenuzada y los calamares, y se cuece todo durante unos minutos. Al retirar del fuego, se agregan los cuadraditos de pan frito. Finalmente, se pican las yemas y las claras de los huevos duros y se espolvorean por encima de la sopa.</p>
-            <img src="./img/receta1-3.png" alt="Paso 3 - Sopa marinera">
+            <img 
+              src="./img/receta1-3.png?as=webp&width=540"
+              srcset="./img/receta1-3.png?as=webp&width=300 300w, ./img/receta1-3.png?as=webp&width=400 400w, ./img/receta1-3.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 3 - Sopa marinera">
           </article>
 
           <article class="card-step">

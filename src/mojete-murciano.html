@@ -30,7 +30,11 @@
     <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-mojete-murciano">
-        <img src="./img/receta2-background.png" alt="Fondo Mojete Murciano">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/receta2-background-desktop.png?as=webp">
+          <source media="(min-width: 768px)" srcset="./img/receta2-background-tablet.png?as=webp">
+          <img src="./img/receta2-background-mobile.png?as=webp" alt="Fondo Mojete Murciano">
+        </picture>
         <h1>Mojete murciano</h1>
       </section>
       <!-- Inicio cards de recetas individuales -->
@@ -80,22 +84,32 @@
 
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 1</h2>
-            <p>Una vez abierto el bote de tomate en conserva, se vierte su contenido sobre un plato o una fuente plana. Tras cortar el tomate muy fino con un cuchillo, se vierte sobre una ensaladera. La cebolla se pela y se corta también muy fina previamente, para echarla después en la ensaladera sobre el tomate, junto con el atún.
-            </p>
-            <img src="./img/receta2-1.png" alt="Paso 1 - Sopa marinera">
+            <p>Una vez abierto el bote de tomate en conserva, se vierte su contenido sobre un plato o una fuente plana. Tras cortar el tomate muy fino con un cuchillo, se vierte sobre una ensaladera. La cebolla se pela y se corta también muy fina previamente, para echarla después en la ensaladera sobre el tomate, junto con el atún.</p>
+            <img 
+              src="./img/receta2-1.png?as=webp&width=540"
+              srcset="./img/receta2-1.png?as=webp&width=300 300w, ./img/receta2-1.png?as=webp&width=400 400w, ./img/receta2-1.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 1 - Mojete murciano">
           </article>
-
+          
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 2</h2>
-            <p>Tras cocer los huevos durante más de cinco minutos, hasta que estén duros, se trocean en rodajas que se esparcen por la ensaladera sobre los otros tres ingredientes. Las aceitunas también se reparten por encima.
-            </p>
-            <img src="./img/receta2-2.png" alt="Paso 2 - Sopa marinera">
+            <p>Tras cocer los huevos durante más de cinco minutos, hasta que estén duros, se trocean en rodajas que se esparcen por la ensaladera sobre los otros tres ingredientes. Las aceitunas también se reparten por encima.</p>
+            <img 
+              src="./img/receta2-2.png?as=webp&width=540"
+              srcset="./img/receta2-2.png?as=webp&width=300 300w, ./img/receta2-2.png?as=webp&width=400 400w, ./img/receta2-2.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 2 - Mojete murciano">
           </article>
-
+          
           <article class="card-step">
             <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 3</h2>
             <p>Finalmente, se echa una miaja de sal y se rocía la preparación con un buen chorro de aceite de oliva. Se ha de remover bien el mojete para que los ingredientes se mezclen de forma homogénea y se empapen del aceite de oliva.</p>
-            <img src="./img/receta2-3.png" alt="Paso 3 - Sopa marinera">
+            <img 
+              src="./img/receta2-3.png?as=webp&width=540"
+              srcset="./img/receta2-3.png?as=webp&width=300 300w, ./img/receta2-3.png?as=webp&width=400 400w, ./img/receta2-3.png?as=webp&width=540 540w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Paso 3 - Mojete murciano">
           </article>
 
           <article class="card-step">

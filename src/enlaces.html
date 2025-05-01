@@ -30,7 +30,11 @@
     <main id="main-content">
       <!-- Título + imagen de fondo -->
       <section class="lema lema-enlaces">
-        <img src="./img/enlaces-background.png" alt="Fondo Enlaces de Interés">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./img/enlaces-background-desktop.png?as=webp">
+          <source media="(min-width: 768px)" srcset="./img/enlaces-background-tablet.png?as=webp">
+          <img src="./img/enlaces-background-mobile.png?as=webp" alt="Fondo Enlaces de Interés">
+        </picture>
         <h1>Enlaces de interés</h1>
       </section>
 
