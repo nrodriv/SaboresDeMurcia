@@ -9,6 +9,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <script type="module" defer src="./icons.js"></script>
+  <script defer src="./mostrarVideos.js"></script>
   <!-- Optimización de la carga de Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +18,6 @@
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
   </noscript>
-
-
-  <script type="module" src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.3/src/lite-yt-embed.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.1.3/src/lite-yt-embed.css">
-
-
   <!-- Estilos -->
   <link rel="stylesheet" href="./styles.scss">
 </head>
@@ -119,16 +114,15 @@
             srcset="./img/receta2-3.png?as=webp&width=300 300w, ./img/receta2-3.png?as=webp&width=400 400w, ./img/receta2-3.png?as=webp&width=540 540w"
             sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Paso 3 - Mojete murciano">
         </article>
-
         <article class="card-step">
           <h2><i data-lucide="eye" class="icon-h2"></i>Mira como se hace</h2>
           <div class="video-wrapper">
-            <lite-youtube videoid="OX-UVxys_-4" style="height: 200px;"
-              title="Vídeo receta de mojete murciano"></lite-youtube>
+            <iframe height="200" src="https://www.youtube.com/embed/OX-UVxys_-4" title="Vídeo receta de mojete murciano"
+              allowfullscreen></iframe>
           </div>
           <div class="video-wrapper">
-            <lite-youtube videoid="1tPQANc9cgU" title="Vídeo receta de mojete murciano"
-              style="height: 200px;"></lite-youtube>
+            <iframe height="200" src="https://www.youtube.com/embed/1tPQANc9cgU" title="Vídeo receta de mojete murciano"
+              allowfullscreen></iframe>
           </div>
         </article>
 

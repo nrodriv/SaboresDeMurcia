@@ -683,3 +683,23 @@ body {
 html {
   font-display: swap;
 }
+
+
+.video-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px 15px;
+  pointer-events: none;
+}
