@@ -478,16 +478,20 @@ body {
 
 
 .enlaces-info {  
+  font-family: 'Alegreya', serif;
   line-height: 1.6;
   padding: 2rem 1rem;
-
+  max-width: 800px;
   margin: 0 auto;
 
-
+  .intro-enlaces {    
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 
   .fuentes {
     h2 {
-      
+      margin-top: 1.5rem;
       color: $rojo-murcia; 
     }
 
