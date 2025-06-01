@@ -1,119 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sabores de Murcia: disfruta del mojete murciano">
-    <title>Mojete murciano | Sabores de Murcia</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <script type="module" src="./icons.js"></script>
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./styles.scss">
-  </head>
-  <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    <!-- header -->
-    <include src="includes/header.html"></include>
-    <main id="main-content">
-      <!-- Título + imagen de fondo -->
-      <section class="lema lema-mojete-murciano">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="./img/receta2-background-desktop.png?as=webp">
-          <source media="(min-width: 768px)" srcset="./img/receta2-background-tablet.png?as=webp">
-          <img src="./img/receta2-background-mobile.png?as=webp" alt="Fondo Mojete Murciano">
-        </picture>
-        <h1>Mojete murciano</h1>
-      </section>
-      <!-- Inicio cards de recetas individuales -->
-      <section class="receta-content">
-        <h2 class="step-title">Receta paso a paso</h2>
-        <div class="cards-receta">
 
-          <article class="card-step">
-            <h2><i data-lucide="chef-hat" class="icon-h2"></i> Ingredientes</h2>
-            <p>
-              <span>1 bote de 1/2 kg de tomate en conserva</span>
-              <span>2 latitas de atún (en aceite o en escabeche)</span>
-              <span>1 cebolla tierna</span>
-              <span>2 huevos cocidos</span>
-              <span>150 g de aceitunas negras</span>
-              <span>Aceite de oliva</span>
-              <span>Sal</span>
-            </p>
-          </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabores de Murcia: disfruta del mojete murciano">
+  <title>Mojete murciano | Sabores de Murcia</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <script type="module" defer src="./icons.js"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./styles.scss">
+</head>
 
-          <article class="card-step">
-            <h2><i data-lucide="help-circle" class="icon-h2"></i> ¿Por qué cocinarlo?</h2>
-            <p>Una de las cualidades que define la calidad de una ensalada es el aceite empleado en el aliño, y como el murciano es amante del "sopar" y el "migar", lo recomendable y saludable es usar siempre aceite de oliva. Aunque las palabras anteriores no supongan ciertamente una actitud muy fina, definen perfectamente esa afición tan nuestra por echar migas de pan en los caldetes de las ensaladas.</p>
-          </article>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <!-- header -->
+  <include src="includes/header.html"></include>
+  <main id="main-content">
+    <!-- Título + imagen de fondo -->
+    <section class="lema lema-mojete-murciano">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./img/receta2-background-desktop.png?as=webp">
+        <source media="(min-width: 768px)" srcset="./img/receta2-background-tablet.png?as=webp">
+        <img loading="lazy" src="./img/receta2-background-mobile.png?as=webp" alt="Fondo Mojete Murciano">
+      </picture>
+      <h1>Mojete murciano</h1>
+    </section>
+    <!-- Inicio cards de recetas individuales -->
+    <section class="receta-content">
+      <h2 class="step-title">Receta paso a paso</h2>
+      <div class="cards-receta">
 
-          <article class="card-step">
-            <h2><i data-lucide="heart-pulse" class="icon-h2"></i> Valores nutricionales</h2>
-            <p>
-              <span><span class="italics">Proteínas:</span> 29 g</span>
-              <span><span class="italics">Grasas:</span> 61 g</span>
-              <span><span class="italics">Hidratos de carbono:</span> 9 g</span>
-              <span><span class="italics">Por persona:</span> 175 kcal</span>
-              <span><span class="italics">Total:</span> 700 kcal</span>
-            </p>
-          </article>
+        <article class="card-step">
+          <h2><i data-lucide="chef-hat" class="icon-h2"></i> Ingredientes</h2>
+          <p>
+            <span>1 bote de 1/2 kg de tomate en conserva</span>
+            <span>2 latitas de atún (en aceite o en escabeche)</span>
+            <span>1 cebolla tierna</span>
+            <span>2 huevos cocidos</span>
+            <span>150 g de aceitunas negras</span>
+            <span>Aceite de oliva</span>
+            <span>Sal</span>
+          </p>
+        </article>
 
-          <article class="card-step">
-            <h2><i data-lucide="book-open" class="icon-h2"></i> Curiosidades</h2>
-            <p>
-              <span><span class="italics">Temporada de consumo: </span> Todo el año</span>
-              <span><span class="italics">Ideal para:</span> Comida o cena</span>
-              <span><span class="italics">Rinde para:</span> 4 comensales</span>
-              <span><span class="italics">Dificultad:</span> Fácil</span>
-              <span><span class="italics">Vino:</span> Blanco de Cartagena</span>
-            </p>
-          </article>
+        <article class="card-step">
+          <h2><i data-lucide="help-circle" class="icon-h2"></i> ¿Por qué cocinarlo?</h2>
+          <p>Una de las cualidades que define la calidad de una ensalada es el aceite empleado en el aliño, y como el
+            murciano es amante del "sopar" y el "migar", lo recomendable y saludable es usar siempre aceite de oliva.
+            Aunque las palabras anteriores no supongan ciertamente una actitud muy fina, definen perfectamente esa
+            afición tan nuestra por echar migas de pan en los caldetes de las ensaladas.</p>
+        </article>
 
-          <article class="card-step">
-            <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 1</h2>
-            <p>Una vez abierto el bote de tomate en conserva, se vierte su contenido sobre un plato o una fuente plana. Tras cortar el tomate muy fino con un cuchillo, se vierte sobre una ensaladera. La cebolla se pela y se corta también muy fina previamente, para echarla después en la ensaladera sobre el tomate, junto con el atún.</p>
-            <img 
-              src="./img/receta2-1.png?as=webp&width=540"
-              srcset="./img/receta2-1.png?as=webp&width=300 300w, ./img/receta2-1.png?as=webp&width=400 400w, ./img/receta2-1.png?as=webp&width=540 540w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Paso 1 - Mojete murciano">
-          </article>
-          
-          <article class="card-step">
-            <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 2</h2>
-            <p>Tras cocer los huevos durante más de cinco minutos, hasta que estén duros, se trocean en rodajas que se esparcen por la ensaladera sobre los otros tres ingredientes. Las aceitunas también se reparten por encima.</p>
-            <img 
-              src="./img/receta2-2.png?as=webp&width=540"
-              srcset="./img/receta2-2.png?as=webp&width=300 300w, ./img/receta2-2.png?as=webp&width=400 400w, ./img/receta2-2.png?as=webp&width=540 540w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Paso 2 - Mojete murciano">
-          </article>
-          
-          <article class="card-step">
-            <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 3</h2>
-            <p>Finalmente, se echa una miaja de sal y se rocía la preparación con un buen chorro de aceite de oliva. Se ha de remover bien el mojete para que los ingredientes se mezclen de forma homogénea y se empapen del aceite de oliva.</p>
-            <img 
-              src="./img/receta2-3.png?as=webp&width=540"
-              srcset="./img/receta2-3.png?as=webp&width=300 300w, ./img/receta2-3.png?as=webp&width=400 400w, ./img/receta2-3.png?as=webp&width=540 540w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Paso 3 - Mojete murciano">
-          </article>
+        <article class="card-step">
+          <h2><i data-lucide="heart-pulse" class="icon-h2"></i> Valores nutricionales</h2>
+          <p>
+            <span><span class="italics">Proteínas:</span> 29 g</span>
+            <span><span class="italics">Grasas:</span> 61 g</span>
+            <span><span class="italics">Hidratos de carbono:</span> 9 g</span>
+            <span><span class="italics">Por persona:</span> 175 kcal</span>
+            <span><span class="italics">Total:</span> 700 kcal</span>
+          </p>
+        </article>
 
-          <article class="card-step">
-            <h2><i data-lucide="eye" class="icon-h2"></i>Mira como se hace</h2>
-            <div class="video-wrapper">
-              <iframe height="200" title="Vídeo receta de mojete murciano" src="https://www.youtube.com/embed/OX-UVxys_-4" allowfullscreen></iframe>
-            </div>
-            <div class="video-wrapper">
-              <iframe height="200" title="Vídeo receta de mojete murciano" src="https://www.youtube.com/embed/1tPQANc9cgU" allowfullscreen></iframe>
-            </div>
-          </article>
+        <article class="card-step">
+          <h2><i data-lucide="book-open" class="icon-h2"></i> Curiosidades</h2>
+          <p>
+            <span><span class="italics">Temporada de consumo: </span> Todo el año</span>
+            <span><span class="italics">Ideal para:</span> Comida o cena</span>
+            <span><span class="italics">Rinde para:</span> 4 comensales</span>
+            <span><span class="italics">Dificultad:</span> Fácil</span>
+            <span><span class="italics">Vino:</span> Blanco de Cartagena</span>
+          </p>
+        </article>
 
-        </div>      
-      </section>
-    </main>
-    <!-- Footer -->
-    <include src="includes/footer.html"></include>
-  </body>
+        <article class="card-step">
+          <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 1</h2>
+          <p>Una vez abierto el bote de tomate en conserva, se vierte su contenido sobre un plato o una fuente plana.
+            Tras cortar el tomate muy fino con un cuchillo, se vierte sobre una ensaladera. La cebolla se pela y se
+            corta también muy fina previamente, para echarla después en la ensaladera sobre el tomate, junto con el
+            atún.</p>
+          <img loading="lazy" src="./img/receta2-1.png?as=webp&width=540"
+            srcset="./img/receta2-1.png?as=webp&width=300 300w, ./img/receta2-1.png?as=webp&width=400 400w, ./img/receta2-1.png?as=webp&width=540 540w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Paso 1 - Mojete murciano">
+        </article>
+
+        <article class="card-step">
+          <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 2</h2>
+          <p>Tras cocer los huevos durante más de cinco minutos, hasta que estén duros, se trocean en rodajas que se
+            esparcen por la ensaladera sobre los otros tres ingredientes. Las aceitunas también se reparten por encima.
+          </p>
+          <img loading="lazy" src="./img/receta2-2.png?as=webp&width=540"
+            srcset="./img/receta2-2.png?as=webp&width=300 300w, ./img/receta2-2.png?as=webp&width=400 400w, ./img/receta2-2.png?as=webp&width=540 540w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Paso 2 - Mojete murciano">
+        </article>
+
+        <article class="card-step">
+          <h2><i data-lucide="utensils" class="icon-h2"></i>Paso 3</h2>
+          <p>Finalmente, se echa una miaja de sal y se rocía la preparación con un buen chorro de aceite de oliva. Se ha
+            de remover bien el mojete para que los ingredientes se mezclen de forma homogénea y se empapen del aceite de
+            oliva.</p>
+          <img loading="lazy" src="./img/receta2-3.png?as=webp&width=540"
+            srcset="./img/receta2-3.png?as=webp&width=300 300w, ./img/receta2-3.png?as=webp&width=400 400w, ./img/receta2-3.png?as=webp&width=540 540w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Paso 3 - Mojete murciano">
+        </article>
+
+        <article class="card-step">
+          <h2><i data-lucide="eye" class="icon-h2"></i>Mira como se hace</h2>
+          <div class="video-wrapper">
+            <iframe height="200" title="Vídeo receta de mojete murciano" src="https://www.youtube.com/embed/OX-UVxys_-4"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-wrapper">
+            <iframe height="200" title="Vídeo receta de mojete murciano" src="https://www.youtube.com/embed/1tPQANc9cgU"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <include src="includes/footer.html"></include>
+</body>
+
 </html>

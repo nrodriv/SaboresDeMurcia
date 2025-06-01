@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Sabores de Murcia: descubre las mejores decetas de la región">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas | Sabores de Murcia</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./styles.scss">
-    <script type="module" src="./cards.js"></script>
-  </head>
-  <body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    <!-- header -->
-    <include src="includes/header.html"></include>
 
-    <main id="main-content">
-      <!-- Título + imagen de fondo -->
-      <section class="lema lema-recetas">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="./img/backgroundRecetas-desktop.png?as=webp">
-          <source media="(min-width: 768px)" srcset="./img/backgroundRecetas-tablet.png?as=webp">
-          <img src="./img/backgroundRecetas-mobile.png?as=webp" alt="Fondo recetas">
-        </picture>
-        <h1>Recetas</h1>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Sabores de Murcia: descubre las mejores decetas de la región">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas | Sabores de Murcia</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./styles.scss">
+  <script type="module" defer src="./cards.js"></script>
+</head>
 
-      <!-- Cards de recetas -->
-      <div class="recetas receta-listado">
-        <div class="cards">
-          <a href="sopa-marinera.html" class="card card-tilt">
-            <img 
-              src="./img/receta1.png?as=webp&width=800"
-              srcset="./img/receta1.png?as=webp&width=400 400w, ./img/receta1.png?as=webp&width=800 800w, ./img/receta1.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación de una sopa marinera">
-            <span>Sopa marinera</span>
-          </a>
-      
-          <a href="mojete-murciano.html" class="card card-tilt">
-            <img 
-              src="./img/receta2.png?as=webp&width=800"
-              srcset="./img/receta2.png?as=webp&width=400 400w, ./img/receta2.png?as=webp&width=800 800w, ./img/receta2.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación del mojete murciano">
-            <span>Mojete murciano</span>
-          </a>
-      
-          <div class="card card-tilt">
-            <img 
-              src="./img/receta3.png?as=webp&width=800"
-              srcset="./img/receta3.png?as=webp&width=400 400w, ./img/receta3.png?as=webp&width=800 800w, ./img/receta3.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación del dulce de granada">
-            <span>Dulce de granada</span>
-          </div>
-      
-          <div class="card card-tilt">
-            <img 
-              src="./img/receta4.png?as=webp&width=800"
-              srcset="./img/receta4.png?as=webp&width=400 400w, ./img/receta4.png?as=webp&width=800 800w, ./img/receta4.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación del moxil">
-            <span>Moxil</span>
-          </div>
-      
-          <div class="card card-tilt">
-            <img 
-              src="./img/receta5.png?as=webp&width=800"
-              srcset="./img/receta5.png?as=webp&width=400 400w, ./img/receta5.png?as=webp&width=800 800w, ./img/receta5.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación de unas talvinas">
-            <span>Talvinas</span>
-          </div>
-      
-          <div class="card card-tilt">
-            <img 
-              src="./img/receta6.png?as=webp&width=800"
-              srcset="./img/receta6.png?as=webp&width=400 400w, ./img/receta6.png?as=webp&width=800 800w, ./img/receta6.png?as=webp&width=1080 1080w"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              alt="Sugerencia de presentación de moragas">
-            <span>Moragas</span>
-          </div>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <!-- header -->
+  <include src="includes/header.html"></include>
+
+  <main id="main-content">
+    <!-- Título + imagen de fondo -->
+    <section class="lema lema-recetas">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./img/backgroundRecetas-desktop.png?as=webp">
+        <source media="(min-width: 768px)" srcset="./img/backgroundRecetas-tablet.png?as=webp">
+        <img loading="lazy" src="./img/backgroundRecetas-mobile.png?as=webp" alt="Fondo recetas">
+      </picture>
+      <h1>Recetas</h1>
+    </section>
+
+    <!-- Cards de recetas -->
+    <div class="recetas receta-listado">
+      <div class="cards">
+        <a href="sopa-marinera.html" class="card card-tilt">
+          <img loading="lazy" src="./img/receta1.png?as=webp&width=800"
+            srcset="./img/receta1.png?as=webp&width=400 400w, ./img/receta1.png?as=webp&width=800 800w, ./img/receta1.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            alt="Sugerencia de presentación de una sopa marinera">
+          <span>Sopa marinera</span>
+        </a>
+
+        <a href="mojete-murciano.html" class="card card-tilt">
+          <img loading="lazy" src="./img/receta2.png?as=webp&width=800"
+            srcset="./img/receta2.png?as=webp&width=400 400w, ./img/receta2.png?as=webp&width=800 800w, ./img/receta2.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            alt="Sugerencia de presentación del mojete murciano">
+          <span>Mojete murciano</span>
+        </a>
+
+        <div class="card card-tilt">
+          <img loading="lazy" src="./img/receta3.png?as=webp&width=800"
+            srcset="./img/receta3.png?as=webp&width=400 400w, ./img/receta3.png?as=webp&width=800 800w, ./img/receta3.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            alt="Sugerencia de presentación del dulce de granada">
+          <span>Dulce de granada</span>
+        </div>
+
+        <div class="card card-tilt">
+          <img loading="lazy" src="./img/receta4.png?as=webp&width=800"
+            srcset="./img/receta4.png?as=webp&width=400 400w, ./img/receta4.png?as=webp&width=800 800w, ./img/receta4.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" alt="Sugerencia de presentación del moxil">
+          <span>Moxil</span>
+        </div>
+
+        <div class="card card-tilt">
+          <img loading="lazy" src="./img/receta5.png?as=webp&width=800"
+            srcset="./img/receta5.png?as=webp&width=400 400w, ./img/receta5.png?as=webp&width=800 800w, ./img/receta5.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            alt="Sugerencia de presentación de unas talvinas">
+          <span>Talvinas</span>
+        </div>
+
+        <div class="card card-tilt">
+          <img loading="lazy" src="./img/receta6.png?as=webp&width=800"
+            srcset="./img/receta6.png?as=webp&width=400 400w, ./img/receta6.png?as=webp&width=800 800w, ./img/receta6.png?as=webp&width=1080 1080w"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            alt="Sugerencia de presentación de moragas">
+          <span>Moragas</span>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <include src="includes/footer.html"></include>
-  </body>
+  <!-- Footer -->
+  <include src="includes/footer.html"></include>
+</body>
+
 </html>
