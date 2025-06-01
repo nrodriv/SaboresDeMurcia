@@ -9,6 +9,14 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <script type="module" defer src="./icons.js"></script>
+  <!-- Optimización de la carga de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  </noscript>
   <!-- Estilos -->
   <link rel="stylesheet" href="./styles.scss">
 </head>
@@ -23,7 +31,7 @@
       <picture>
         <source media="(min-width: 1024px)" srcset="./img/receta2-background-desktop.png?as=webp">
         <source media="(min-width: 768px)" srcset="./img/receta2-background-tablet.png?as=webp">
-        <img loading="lazy" src="./img/receta2-background-mobile.png?as=webp" alt="Fondo Mojete Murciano">
+        <img src="./img/receta2-background-mobile.png?as=webp" alt="Fondo Mojete Murciano">
       </picture>
       <h1>Mojete murciano</h1>
     </section>

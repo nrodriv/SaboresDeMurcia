@@ -8,6 +8,14 @@
   <title>Recetas | Sabores de Murcia</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <!-- Optimización de la carga de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  </noscript>
   <!-- Estilos -->
   <link rel="stylesheet" href="./styles.scss">
   <script type="module" defer src="./cards.js"></script>
@@ -24,7 +32,7 @@
       <picture>
         <source media="(min-width: 1024px)" srcset="./img/backgroundRecetas-desktop.png?as=webp">
         <source media="(min-width: 768px)" srcset="./img/backgroundRecetas-tablet.png?as=webp">
-        <img loading="lazy" src="./img/backgroundRecetas-mobile.png?as=webp" alt="Fondo recetas">
+        <img src="./img/backgroundRecetas-mobile.png?as=webp" alt="Fondo recetas">
       </picture>
       <h1>Recetas</h1>
     </section>
