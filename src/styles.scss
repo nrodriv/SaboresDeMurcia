@@ -478,27 +478,24 @@ body {
 
 
 .enlaces-info {
+  font-size: 1rem;
+  line-height: 1.6;
   padding: 2rem 1rem;
-  min-height: 30vh;
   max-width: 800px;
   margin: 0 auto;
 
-  .intro-enlaces {
-    font-size: 1.25rem;
-    font-weight: 500;
+  .intro-enlaces {    
     margin-bottom: 2rem;
     text-align: center;
   }
 
   .fuentes {
     h2 {
-      font-size: 1.2rem;
       margin-top: 1.5rem;
       color: $rojo-murcia; 
     }
 
     p {
-      font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 1rem;
 
